@@ -8,7 +8,7 @@ local f = ls.function_node
 local snippets = {
     -- Main function
     s("main", {
-        t({"int main(int argc, char *argv[]) {", "\t"}),
+        t({"int main(NIGGA) {", "\t"}),
         i(1),
         t({"", "\treturn 0;", "}"})
     }),
@@ -35,6 +35,13 @@ local snippets = {
         t({"", "}"})
     }),
 
+
+    s("boi", {
+        t({"#include <stdio.h>", "\t"}),
+        t({"int main() {", "\t"}),
+        i(1),
+        t({"", "\treturn 0;", "}"})
+        }),
     -- If statement
     s("if", {
         t("if ("),
@@ -46,4 +53,5 @@ local snippets = {
 }
 
 -- Register the snippets
-ls.add_snippets("c", snippets)
+-- ls.add_snippets("c", snippets)
+return snippets

@@ -20,7 +20,8 @@ vim.g.neovide_cursor_vfx_mode = "pixiedust"
 vim.o.cursorline = false
 
 vim.opt.cursorlineopt='number'
--- vim.g.neovide_transparency = 0.88
+vim.g.neovide_transparency = 0.88
+
 -- vim.g.transparency = 0.88
 -- vim.g.neovide_background_color = ("#0f1117" .. string.format("%x", math.floor(((255 * vim.g.transparency) or 0.8))))
 
@@ -34,3 +35,5 @@ vim.api.nvim_set_keymap("n", "<A-Down>", ":m .+1<CR>==", { noremap = true, silen
 vim.api.nvim_set_keymap("v", "<A-Down>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 require "lazy_setup"
 require "polish"
+require "keybinds"
+
